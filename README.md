@@ -10,4 +10,6 @@ Why you should not do that?
 
 3. For React.js users, this is most the cases they have been faced at least once. Even me kinda messed this up once in a while. Why? Because we kinda want to test component updates/events while we developing frontend, and fastest way to do this is to bind component state directly into `render()`. We are so hot-headed about building something so we can't wait to implement `ActionCreators`, `Reducers`. We want to see the UI event and Lived UI immediately!!! Yeah, at the end of the day we just wasted more time. T_T
 
+4. To avoid this, try to start with simple `ActionCreator` and simple `Reducer` first. Like in `ShouldDoThis.js`. It can be just about 10 lines of code. Trust me, this will unbeliveably save your time in the end. Today, I need to refactor a lot to make `render()` not using component state and it waste a lot of time for nothing.
+
 Note to self: Don't ever do this again
