@@ -11,14 +11,14 @@ const title = React.createClass({
 
   onDoSomething () {
 
-
+    this.props.dispatch(ChangeTitleAction('ME ROCKS'))
   },
 
   render () {
 
     return (
       <div className='title'>
-        {this.state.title}
+        {this.props.title}
         <button onClick={this.onDoSomething}>Click here to do something</button>
       </div>
 
