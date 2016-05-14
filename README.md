@@ -4,7 +4,7 @@ Small sample to show how not to use React State
 
 Why you should not do that?
 
-1. If another part of your application want to adjust title show in this component, in `ShouldNotDoThis.js` you have to implement `componentWillReceiveProps` accordingly, while in `ShouldDoThis.js` you can just dispatch change into redux state tree and it should be fine.
+1. If another part of your application want to adjust title show in this component, in `ShouldNotDoThis.js` you have to implement `componentWillReceiveProps` accordingly, while in `ShouldDoThis.js` you can just dispatch change into redux state tree and everything will be fine.
 
 2. Even if you implement `componentWillReceiveProps` correctly, you have 2 unconsistent data, in redux state tree and your own component state.
 
